@@ -600,7 +600,8 @@ color: #fff;
 }
 
 .form-footer-button {
-position: relative;
+position: relative;\
+display: flex;
 border-radius: 4px;
 padding: 8px 24px;
 min-width: 165px;
@@ -612,13 +613,14 @@ line-height: 1.5;
 letter-spacing: 0.04em;
 text-align: center;
 color: #fff;
+border: none;
 }
 .form-footer-icon {
   position: absolute;
+  fill=#fff
   left: 24px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop {
@@ -676,6 +678,9 @@ z-index: 999;
   background-color: #e7e9fc;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1),border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.close-icon {
+  fill: #2e2f42;
+}
 
 .modal-close-btn:focus,
 .modal-close-btn:hover {
@@ -730,6 +735,7 @@ margin-bottom: 4px;
 }
 
 .modal-icon {
+  fill: #2e2f42;
  position: absolute;
  left: 16px;
  top: 50%;
@@ -799,6 +805,10 @@ align-items: center;
   background-color: #404bbf,
   border-radius: 2px;
   border: 1px solid #404bbf,
+}
+
+.checkbox-icon {
+  
 }
 
 .modal-cont-checkbox {
