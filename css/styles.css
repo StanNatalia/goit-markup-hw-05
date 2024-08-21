@@ -839,7 +839,7 @@ display: inline-flex;
 fill: transparent;
 }
 
-.checkbox:checked + .custom-label-user-checkbox > .checkbox-icon {
+.checkbox:checked > .checkbox-icon {
   background-color: #404bbf;
   border: none;
   fill: #F4F4FD;
