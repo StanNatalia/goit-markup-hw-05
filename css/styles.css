@@ -838,7 +838,7 @@ display: inline-flex;
 fill: transparent;
 }
 
-.checkbox:checked > .custom-checkbox {git
+.checkbox:checked + .custom-checkbox {
   background-color: #404bbf;
   border-radius: 2px;
   border: none;
