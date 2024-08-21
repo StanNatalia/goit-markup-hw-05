@@ -705,9 +705,9 @@ z-index: 999;
 
 }
 
-.modal-close-btn:focus,
-.modal-close-btn:hover {
-  background-color: #404bbf;
+.modal-close-btn:focus > .close-icon,
+.modal-close-btn:hover > .close-icon {
+  background-color:#404bbf;
   border:none;
 }
 
@@ -759,6 +759,11 @@ margin-bottom: 4px;
   border: 1px solid #4d5ae5;
   fill: #ffffff;
 }
+
+.modal-input:focus > .modal-icon {
+  fill: #4D5AE5;
+}
+
 
 .modal-icon {
   fill: #2e2f42;
@@ -820,9 +825,9 @@ letter-spacing: 0.04em;
 color: rgba(46, 47, 66, 0.4);
 }
 
-.modal-textarea:focus,
-.modal-textarea:hover {
+.modal-textarea:focus {
   border: 1px solid #4d5ae5;
+  border-color: #4D5AE5;
 }
 
 .custom-checkbox {
@@ -839,7 +844,7 @@ display: inline-flex;
 fill: transparent;
 }
 
-.checkbox:checked + .custom-checkbox > .custom-checkbox {
+.checkbox:checked + .custom-label-user-checkbox > .custom-checkbox {
   background-color: #404bbf;
   border-radius: 2px;
   border: none;
