@@ -705,10 +705,15 @@ z-index: 999;
 
 }
 
-.modal-close-btn:focus > .close-icon,
-.modal-close-btn:hover > .close-icon {
+.modal-close-btn:focus,
+.modal-close-btn:hover {
   background-color:#404bbf;
   border:none;
+}
+
+.modal-close-btn:focus > .close-icon,
+.modal-close-btn:hover > .close-icon {
+  fill: #ffffff;
 }
 
 .modal-text {
@@ -754,10 +759,8 @@ margin-bottom: 4px;
   outline: transparent;
 }
 
-.modal-input:focus,
-.modal-input:hover {
-  border: 1px solid #4d5ae5;
-  fill: #ffffff;
+.modal-input:focus {
+  border-color: #4D5AE5;
 }
 
 .modal-input:focus > .modal-icon {
@@ -844,7 +847,7 @@ display: inline-flex;
 fill: transparent;
 }
 
-.checkbox:checked + .custom-label-user-checkbox > .custom-checkbox {
+.checkbox:checked + .custom-label-user-checkbox {
   background-color: #404bbf;
   border-radius: 2px;
   border: none;
