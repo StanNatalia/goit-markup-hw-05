@@ -638,6 +638,7 @@ gap: 16px;
 
 .form-footer-icon {
   fill=#fff;
+  margin-left: 16px;
   top: 50%;
 }
 
@@ -655,7 +656,7 @@ gap: 16px;
 
 }
 
-.backdrop, is-open {
+.backdrop is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -838,12 +839,14 @@ display: inline-flex;
 fill: transparent;
 }
 
-.checkbox:checked + .custom-checkbox {
+.checkbox:checked + .custom-checkbox > .custom-checkbox {
   background-color: #404bbf;
   border-radius: 2px;
   border: none;
   fill: #F4F4FD;
 }
+
+
 
 .checkbox-icon {
   
